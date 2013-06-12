@@ -17,6 +17,7 @@ function main(argv) {
 
 function escapeHtml(value) {
   return value.toString().
+    replace('&', '&amp;').
     replace('<', '&lt;').
     replace('>', '&gt;').
     replace('"', '&quot;').
